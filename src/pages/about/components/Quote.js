@@ -20,7 +20,7 @@ export default function Quote({ quoteContent, author }) {
         <span className='text-dark-800 dark:text-light-800'>
           ~
         </span>
-        <span className='text-dark-900 dark:text-dark-700 dark:tracking-wide'>
+        <span className='text-dark-800 dark:text-dark-800 dark:tracking-wide'>
           {author}
         </span>
       </div>

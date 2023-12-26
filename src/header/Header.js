@@ -1,4 +1,4 @@
-import logo from '../assets/icons/logo.svg';
+
 import openMenuIcon from '../assets/icons/open-menu.svg'
 import closeMenuIcon from '../assets/icons/closeMenu.svg'
 import './Header.css'
@@ -13,12 +13,12 @@ import { useContext, useEffect } from 'react';
 
 
 export default function Header() {
-    const nav = ["home", "about", "projects", "skills", "contact"];
+    const nav = ["Home", "About", "Projects", "Skills", "Contact"];
 
     const isMdScreen = useMediaQuery({ minWidth: 768 });
     const isLgScreen = useMediaQuery({ minWidth: 1200 });
     
-    const { openMenu, setOpenMenu , theme} = useContext(AppContext);
+    const { openMenu, setOpenMenu} = useContext(AppContext);
 
     const handleClick = () => {
         setOpenMenu(!openMenu);
@@ -35,9 +35,8 @@ export default function Header() {
         <>
             <div className='header-container'>
                 <div className='logo-container'>
-                    <img src={(theme !== "dark") ? logo : icons.logoW} alt='logo ' className='logo-img' />
                     <div className='logo-name' >
-                        Bilal Ben Aouad
+                        RAJAA KACEMI
                     </div>
                 </div>
                 <div className='spacing'></div>
@@ -68,7 +67,7 @@ export default function Header() {
                 }
             </div>
            {(openMenu && !isMdScreen && !isLgScreen) && <div className='sm-menu-nav'>
-                <PersonalBadge userName="Bilal Ben Aouad" title="Frontend Developer" pic={`${icons.profilePic}`} />
+                <PersonalBadge userName="Rajaa Kacemi" title="Full stack web Developer" pic={`${icons.profilePic}`} />
                 <NavItems />
             </div>}
         </>

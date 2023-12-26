@@ -1,18 +1,22 @@
 import { CPlain } from 'devicons-react'
 import { CplusplusOriginal } from 'devicons-react';
-import { TypescriptOriginal } from 'devicons-react';
 import { ReactOriginalWordmark } from 'devicons-react';
 import { TailwindcssPlain } from 'devicons-react';
 import { ReduxOriginal } from 'devicons-react';
-import { SocketioOriginal } from 'devicons-react';
-import { NextjsLine } from 'devicons-react';
-import { DockerOriginal } from 'devicons-react';
 import { Html5OriginalWordmark } from 'devicons-react';
 import { Css3OriginalWordmark } from 'devicons-react';
+import { MongodbOriginal } from 'devicons-react';
+import { MysqlOriginalWordmark } from 'devicons-react';
+import { BootstrapOriginalWordmark } from 'devicons-react';
+import { PhpPlain } from 'devicons-react';
+import JavascriptOriginal from 'devicons-react/lib/icons/JavascriptOriginal';
+
+
+
 import '../projects.css';
 import React from 'react'
 
-export default function Card({ title, description, img, technologies, githubPath }) {
+export default function Card({ title, description, img, technologies, githubPath, demoPath }) {
     const IconComp = CPlain;
 
     return (
@@ -28,22 +32,33 @@ export default function Card({ title, description, img, technologies, githubPath
                 <div className='flex gap-1 lg:mt-[2px]'>
                     <IconComp size={24} color="white" className={`mb-2 ${(technologies === "lowLevel") ? "" : "hidden"}`} />
                     <CplusplusOriginal size={24} color="white" className={`mb-2 ${technologies === "C++" ? "" : "hidden"}`} />
-                    <TypescriptOriginal size={24} color="white" className={`mb-2 ${technologies === "Web" ? "" : "hidden"}`} />
+                    <MongodbOriginal size={24} color="white" className={`mb-2 ${technologies === "Web" ? "" : "hidden"}`} />
                     <ReactOriginalWordmark size={24} color="white" className={`mb-2 ${technologies === "Web" ? "" : "hidden"}`} />
                     <TailwindcssPlain size={24} color="white" className={`mb-2 ${technologies === "Web" ? "" : "hidden"}`} />
                     <ReduxOriginal size={24} color="white" className={`mb-2 ${technologies === "Web" ? "" : "hidden"}`} />
-                    <SocketioOriginal size={24} color="white" className={`mb-2 ${technologies === "Web" ? "" : "hidden"}`} />
-                    <NextjsLine size={24} color="white" className={`mb-2 ${technologies === "Web" ? "" : "hidden"}`} />
-                    <DockerOriginal size={24} color="white" className={`mb-2 ${technologies === "Docker" ? "" : "hidden"}`} />
+                    <MysqlOriginalWordmark size={24} color="white" className={`mb-2 ${technologies === "Web2" ? "" : "hidden"}`} />
+                    <BootstrapOriginalWordmark  size={24} color="white" className={`mb-2 ${technologies === "Web2" ? "" : "hidden"}`} />
+                    <PhpPlain size={24} color="white" className={`mb-2 ${technologies === "Web2" ? "" : "hidden"}`} />
+                    <Html5OriginalWordmark size={24} color="white" className={`mb-2 ${technologies === "Web2" ? "" : "hidden"}`} />
+                    <Css3OriginalWordmark size={24} color="white" className={`mb-2 ${technologies === "Web2" ? "" : "hidden"}`} />
                     <Html5OriginalWordmark size={24} color="white" className={`mb-2 ${technologies === "Basic" ? "" : "hidden"}`} />
                     <Css3OriginalWordmark size={24} color="white" className={`mb-2 ${technologies === "Basic" ? "" : "hidden"}`} />
+                    <JavascriptOriginal size={24} color="white" className={`mb-2 ${technologies === "Basic" ? "" : "hidden"}`} />
                 </div>
-                <a href={githubPath} rel="noreferrer" target="_blank" className="w-[60%] inline-flex justify-center items-center px-3 py-2 lg:mt-1  text-sm font-medium text-center text-dark-900 bg-light-800 rounded-lg hover:bg-btn-700 hover:text-light-900 dark:hover:bg-dark-700">
+                <div className='flex space-x-4' >
+                <a href={githubPath} rel="noreferrer" target="_blank" className="w-[60%] inline-flex justify-center items-center px-3  lg:mt-1  text-sm font-medium text-center text-dark-900 bg-light-800 rounded-lg hover:bg-btn-700 hover:text-light-900 dark:hover:bg-dark-700">
                     source code
                     <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                     </svg>
                 </a>
+                <a href={demoPath} rel="noreferrer" target="_blank" className="w-[60%] inline-flex justify-center items-center px-3  lg:mt-1  text-sm font-medium text-center text-dark-900 bg-light-800 rounded-lg hover:bg-btn-700 hover:text-light-900 dark:hover:bg-dark-700">
+                    Live demo
+                    <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    </svg>
+                </a>
+                </div>
             </div>
         </div>
     )

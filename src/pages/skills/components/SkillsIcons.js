@@ -1,25 +1,24 @@
 import React from 'react'
 import { useMediaQuery } from 'react-responsive'
 
-
 import { CPlain } from 'devicons-react'
 import { CplusplusPlain } from 'devicons-react';
 import { JavascriptOriginal } from 'devicons-react';
-import { TypescriptPlain } from 'devicons-react';
 import { Html5OriginalWordmark } from 'devicons-react';
 import { Css3OriginalWordmark } from 'devicons-react';
 import { TailwindcssPlain } from 'devicons-react';
 import { ReactOriginalWordmark } from 'devicons-react';
-import { NextjsLine } from 'devicons-react';
-import { SocketioOriginal } from 'devicons-react';
 import { ReduxOriginal } from 'devicons-react';
-import { DockerOriginalWordmark } from 'devicons-react';
-import { FigmaOriginal } from 'devicons-react';
 import { GithubOriginalWordmark } from 'devicons-react';
-
+import { JavaOriginalWordmark } from 'devicons-react';
+import { PhpOriginal } from 'devicons-react';
 import { AppContext } from '../../../App';
 import { useContext } from 'react';
 import icons from '../../../assets/icons/icons';
+import { NodejsOriginalWordmark } from 'devicons-react';
+import { ExpressOriginalWordmark } from 'devicons-react';
+import { MysqlOriginalWordmark } from 'devicons-react';
+import { MongodbOriginalWordmark } from 'devicons-react';
 
 
 export default function SkillsIcons() {
@@ -38,16 +37,16 @@ export default function SkillsIcons() {
             <Css3OriginalWordmark size={(isLgScreen || isMdScreen) ? 90 : 50} className='scale-up-center' />
             <TailwindcssPlain size={(isLgScreen || isMdScreen) ? 90 : 50} className='scale-up-center' />
             <JavascriptOriginal size={(isLgScreen || isMdScreen) ? 90 : 50} className='scale-up-center' />
-            <TypescriptPlain size={(isLgScreen || isMdScreen) ? 90 : 50} className='scale-up-center' />
+            <JavaOriginalWordmark size={(isLgScreen || isMdScreen) ? 90 : 50} className='scale-up-center' />
             <ReactOriginalWordmark size={(isLgScreen || isMdScreen) ? 90 : 50} className='scale-up-center' />
-            <NextjsLine size={(isLgScreen || isMdScreen) ? 90 : 50}  color={(theme !== "dark") ? "" : "white"} className='scale-up-center '/>
-            {theme !== "dark"  && <SocketioOriginal size={(isLgScreen || isMdScreen) ? 90 : 50}  className='scale-up-center ' />}
-            {theme === "dark"  && <img src={icons.socketIconW} width={(isLgScreen || isMdScreen) ? 100 : 50}   alt=' '/>}
+            <PhpOriginal size={(isLgScreen || isMdScreen) ? 120 : 50}  color={(theme !== "dark") ? "" : "white"} className='scale-up-center '/>
+            <MongodbOriginalWordmark size={(isLgScreen || isMdScreen) ? 100 : 50}  className='scale-up-center ' />
             <ReduxOriginal size={(isLgScreen || isMdScreen) ? 90 : 50} className='scale-up-center' />
-            <DockerOriginalWordmark size={(isLgScreen || isMdScreen) ? 90 : 50} className='scale-up-center' />
-            <FigmaOriginal size={(isLgScreen || isMdScreen) ? 90 : 50} />
+            <NodejsOriginalWordmark size={(isLgScreen || isMdScreen) ? 120 : 50} className='scale-up-center' />
+            <ExpressOriginalWordmark size={(isLgScreen || isMdScreen) ? 120 : 50} />
             {theme !== "dark"  && <GithubOriginalWordmark size={(isLgScreen || isMdScreen) ? 90 : 50}  className='scale-up-center' />}
             {theme === "dark"  && <img src={icons.gitIconW} width={(isLgScreen || isMdScreen) ? 95 : 50}   alt=' '/>}
+            <MysqlOriginalWordmark size={(isLgScreen || isMdScreen) ? 120 : 50} className='scale-up-center '/>
 
         </>
     )

@@ -3,92 +3,35 @@ import icons from "../../../assets/icons/icons";
 
 const projectsData = [
     {
-        projectTitle: "ft_transcendence",
-        projectDescription: "Web project, about a real-time ping pong game and more ...",
-        projectImgCard: icons.pingCardImg,
+        projectTitle: "E-commerce website",
+        projectDescription: "e-commerce website to sell accessories for women and men.",
+        projectImgCard: icons.prestigiousCardImg,
         technologies : "Web",
-        githubPath : "https://github.com/bben-aou/ft_transcendence",
+        githubPath : "https://github.com/RajaeKacemi/E-commerceWebsite",
+        demoPath: "https://prestigious-five.vercel.app/"
     },
     {
-        projectTitle: "University Website",
-        projectDescription: "one of the first websites i created when i started web development. ",
-        projectImgCard: icons.univCardImg,
+        projectTitle: "E-learning website",
+        projectDescription: "the first website I created at the university. ",
+        projectImgCard: icons.ElearningCardImg,
+        technologies : "Web2",
+        githubPath : "https://github.com/RajaeKacemi/E-learning-web-application",
+    },
+    {
+        projectTitle: "CSS Grid",
+        projectDescription: "a small application about css grid with HTML and CSS.",
+        projectImgCard: icons.pingCardImg,
         technologies : "Basic",
-        githubPath : "https://bben-aou.github.io/myprojects/university/",
+        githubPath : "https://github.com/RajaeKacemi/Grid_System",
+        demoPath: "https://css-grid-nu.vercel.app/"
     },
     {
-        projectTitle: "inception",
-        projectDescription: "Expend the knowledge of system administration by using Docker.",
-        projectImgCard: icons.dockerCardImg,
-        technologies : "Docker",
-        githubPath : "https://github.com/bben-aou",
+        projectTitle: "Random quotes",
+        projectDescription: "a simple app offer random quotes",
+        projectImgCard: icons.quoCardImg,
+        technologies : "Basic",
+        githubPath : "https://github.com/RajaeKacemi/Movies_app",
+        demoPath: "https://random-quotes-ruby.vercel.app/",
     },
-    {
-        projectTitle: "Cpp Modules",
-        projectDescription: "Introducing the object-Oriented Programming , diving into C++.",
-        projectImgCard: icons.cppCardImg,
-        technologies : "C++",
-        githubPath : "https://github.com/bben-aou/CPP_Modules-",
-    },
-    {
-        projectTitle: "ft_irc",
-        projectDescription: "Implement Internet Relay Chat Server based on RFC 2812.",
-        projectImgCard: icons.ircCardImg,
-        technologies : "C++",
-        githubPath : "https://github.com/bben-aou/ft_irc",
-    },
-    {
-        projectTitle: "cub3d",
-        projectDescription: "Using graphic tools to make a raycasting game like Wolfenstein.",
-        projectImgCard: icons.cub3dCardImg,
-        technologies : "lowLevel",
-        githubPath : "https://github.com/bben-aou/Cub3D",
-    },
-    {
-        projectTitle: "philosophers",
-        projectDescription: "Solving Dining philosophers problem using the threads.",
-        projectImgCard: icons.philosopherCardImg,
-        technologies : "lowLevel",
-        githubPath : "https://github.com/bben-aou/philosopher",
-    },
-    {
-        projectTitle: "libft",
-        projectDescription: "Create a versatile C library for essential functions in C projects.",
-        projectImgCard: icons.libftCardImg,
-        technologies : "lowLevel",
-        githubPath : "https://github.com/bben-aou/libft",
-      },
-      {
-        projectTitle: "get_next_line",
-        projectDescription: "Create a newline-ending line reader from a file descriptor.",
-        projectImgCard: icons.getLineCardImg,
-        technologies : "lowLevel",
-        githubPath : "https://github.com/bben-aou/get_next_line",
-  
-      },
-      {
-          projectTitle: "ft_printf",
-          projectDescription: "Recreate the printf function with a personalized approach.",
-          projectImgCard: icons.printfCardImg,
-          technologies : "lowLevel",
-          githubPath : "https://github.com/bben-aou/ft_printf",
-  
-      },
-      {
-          projectTitle: "pipex",
-          projectDescription: "Recreate the way two commands are piped together by | in the shell.",
-          projectImgCard: icons.pipexCardImg,
-          technologies : "lowLevel",
-          githubPath : "https://github.com/bben-aou/pipex",
-  
-      },
-      {
-          projectTitle: "push-swap",
-          projectDescription: "Algorithmic problem aims to find the best sort algorithm to solve it.",
-          projectImgCard: icons.pushSwapCardImg,
-          technologies : "lowLevel",
-          githubPath : "https://github.com/bben-aou/push-swap",
-  
-      },
   ];
 export default projectsData;

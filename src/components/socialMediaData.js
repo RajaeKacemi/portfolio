@@ -1,15 +1,15 @@
 const urlSocialMedia = [
     {
         site: "LinkedIn",
-        url: "https://www.linkedin.com/in/ben-aouad-bilal-602b8a245/",
+        url: "https://www.linkedin.com/in/rajaakacemi/",
     },
     {
         site: "Github",
-        url: "https://www.github.com/bben-aou",
+        url: "https://github.com/RajaeKacemi",
     },
     {
-        site: "Instagram",
-        url: "https://www.instagram.com/bilal.b.aouad/",
+        site: "Twitter",
+        url: "https://twitter.com/heyRajaa",
     }
 ]
 export default urlSocialMedia;

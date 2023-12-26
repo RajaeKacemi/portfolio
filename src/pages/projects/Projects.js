@@ -28,6 +28,7 @@ function Projects() {
                 img={item.projectImgCard}
                 technologies={item.technologies}
                 githubPath={item.githubPath}
+                demoPath={item.demoPath}
             />
 
     ));
@@ -38,7 +39,7 @@ function Projects() {
             <div className={!openMenu ? ` w-full h-[92vh] lg:h-[88vh] lg:px-[50px] flex flex-col justify-center lg:justify-evenly 2xl:justify-center` : `hidden`}>
 
                 <div className="z-50 w-full h-1/3  flex flex-col items-center justify-center  lg:justify-end 2xl:justify-center  ">
-                    <h1 className=" text-[2rem] lg:text-[3.4rem] 2xl:text-[3.6rem] font-black font-roboto text-dark-900 slide-top dark:text-light-900">
+                    <h1 className=" text-[2rem] lg:text-[3.4rem] 2xl:text-[3.6rem] font-black font-roboto text-dark-900 slide-top dark:text-dark-600">
                         My Recent Projects
                     </h1>
                     <p className=" lg:text-right text-center text-dark-800 text-[0.8rem] lg:text-[1.1rem] 2xl:text-[1.2rem] font-normal font-roboto px-2 lg:px-0 lg:mb-[15px] mt-2 dark:text-light-800 slide-right">

@@ -12,7 +12,7 @@ export default function EmailForm() {
     function onSubmit(e) {
         e.preventDefault();
 
-        fetch("https://formcarry.com/s/orkk1MFj1o", {
+        fetch("https://formcarry.com/s/_TLKKWOVu-", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

@@ -26,20 +26,20 @@ export default function Contact() {
             <div className={!openMenu ? `container ` : `hidden`}>
                 <div className={`${(isMdScreen || isLgScreen) ? `w-[60%]` : `w-full`} wrapper  z-50`}>
                     <div className={(isMdScreen || isLgScreen) ? `w-[90%] h-[90%] rounded-lg  flex flex-col justify-center` : `w-full h-full  rounded-lg `}>
-                        <div className={`info-section ${(isMdScreen || isLgScreen) ? `justify-center ` : `justify-end`} `}>
-                            <h1 className='contact-title'>
+                        <div className={`info-section ${(isMdScreen || isLgScreen) ? `justify-center ` : `justify-end `}  `}>
+                            <h1 className='contact-title '>
                                 Contact
                             </h1>
                             <p className='paragraph-styling'>
-                                Get in touch or shoot me an email directly on
-                                <span className='email-styling'>
-                                    bilal.benaouad@ump.ac.com
+                                Get in touch or shoot me an email directly on :  
+                                <span className='email-styling '>
+                                    rajaa01.kacemi@gmail.com
                                 </span>
                             </p>
                         </div>
                         <div className='form-container'>
 
-                            < EmailForm />
+                            < EmailForm className=""/>
                             {
                                 showSocialMedia &&
                                 <div className='w-full h-[20%] flex items-end'>

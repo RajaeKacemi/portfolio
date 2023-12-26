@@ -11,7 +11,7 @@
 }
 
 .contact-title{
-    @apply text-[1.4rem] lg:text-[2rem] 2xl:text-[3rem] 2xl:tracking-wide font-semibold font-roboto text-dark-900 tracking-[0.5px] dark:text-light-900 slide-top;
+    @apply text-[1.4rem] lg:text-[2rem] 2xl:text-[3rem] 2xl:tracking-wide font-semibold font-roboto text-dark-900 tracking-[0.5px] dark:text-dark-600 slide-top;
 }
 
 .paragraph-styling{
@@ -19,7 +19,7 @@
 }
 
 .email-styling{
-    @apply text-dark-900 dark:text-light-800 font-semibold transition duration-700 ease-in-out email-animation;
+    @apply text-dark-900 dark:text-dark-600 font-semibold transition duration-700 ease-in-out email-animation;
 }
 
 .form-container{
